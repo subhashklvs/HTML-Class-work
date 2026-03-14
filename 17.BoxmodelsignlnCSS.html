@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body{
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightcyan;
+        }
+        form{
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        label{
+            color: black;
+            display: inline-block;
+            width: 120px;
+        }
+        input{
+            color: black;
+            width: 200px;
+            padding: 5px;
+        }
+        button{
+            margin-left: 120px;
+            padding: 5px 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>sign up form</h2>
+    <form><div>
+        <label>username</label>
+        <input type="text" placeholder="enter username">
+        <br><br>
+        </div>
+        <div>
+        <label>email</label>
+        <input type="email" placeholder="enter email">
+        <br><br>
+        </div>
+        <div>
+        <label>password</label>
+        <input type="password" placeholder="enter password">
+        <br><br>
+        </div>
+        <div>
+        <label>phone number</label>
+        <input type="number" placeholder="enter phone number">  
+        </div>
+        <div>
+            <label>gender</label>
+            <input type="radio" name="gender" value="male">
+            <label>Male</label>
+            <input type="radio" name="gender" value="female">
+            <label>Female</label>
+        </div>
+        <div>
+            <label>country code</label>
+            <input type="text" placeholder="enter country code">
+        </div>
+        <div>
+            <label>phone number</label>
+            <input type="text" placeholder="enter phone number">
+        </div>
+        <div>
+        <label>confirm password</label>
+        <input type="password" placeholder="confirm password">
+        <br><br>
+        </div>
+        <div>
+        <button type="submit">sign up</button>
+        </div>
+
+
+    </form>
+    
+</body>
+</html>
