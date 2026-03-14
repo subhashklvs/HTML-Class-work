@@ -3,88 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form</title>
+    <title>Box Model Sign Up Form</title>
     <style>
-        body{
-            height: 100vh;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: lightcyan;
-        }
-        form{
-            width: 400px;
-            margin: 50px auto;
-            padding: 20px;
-            border: 1px solid black;
-            border-radius: 10px;
-        }
-        label{
-            color: black;
-            display: inline-block;
-            width: 120px;
-        }
-        input{
-            color: black;
-            width: 200px;
-            padding: 5px;
-        }
-        button{
-            margin-left: 120px;
-            padding: 5px 10px;
-            background-color: black;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
-        
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+       body{
+        background-color: darkcyan;
+        height: 100vh;
+        margin: 10px;
+        padding: 10px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+       }
+       form{
+        margin: 190px auto;
+        border: 1px solid #dbdbdb;
+        width: 500px;
+        height: auto;
+        padding: 10px;
+       }
+       h2{
+        color: #000;
+        text-decoration: underline;
+        padding-bottom: 10px;
+       }
+       form label{
+        font-size: 18px;
+        font-weight: bold;
+        color: antiquewhite;
+       }
+       .style,select{
+        height: 30px;
+        width: 60%;
+        border: 1px solid #dbdbdb;
+        border-radius: 5px;
+        margin: 5px;
+        margin-bottom: 10px;
+       }
+       button{
+        width: 30%;
+        padding: 6px;
+        border: none;
+        border-radius: 5px;
+        background-color: blanchedalmond;
+        color: black;
+        margin-top: 10px;
+        margin-bottom: 10px;
+       }
+       
     </style>
 </head>
 <body>
-    <h2>sign up form</h2>
-    <form><div>
-        <label>username</label>
-        <input type="text" placeholder="enter username">
-        <br><br>
+    <form>
+        <h2>Sign Up Form</h2>
+        <div>
+        <label>UserName:</label><br><br>
+        <input type="text" class="style" placeholder="Enter Your Name"/>
         </div>
         <div>
-        <label>email</label>
-        <input type="email" placeholder="enter email">
-        <br><br>
+            <label>Email:</label><br><br>
+            <input type="email" class="style" placeholder="Enter Email"/>
         </div>
         <div>
-        <label>password</label>
-        <input type="password" placeholder="enter password">
-        <br><br>
+            <label>Password:</label><br><br>
+            <input type="password" class="style" placeholder="Enter Password"/>
         </div>
         <div>
-        <label>phone number</label>
-        <input type="number" placeholder="enter phone number">  
+            <label>Gender:</label>
+            <input type="radio" name="gender"/>Male 
+            <input type="radio" name="gender"/> Female
         </div>
         <div>
-            <label>gender</label>
-            <input type="radio" name="gender" value="male">
-            <label>Male</label>
-            <input type="radio" name="gender" value="female">
-            <label>Female</label>
+            <label>+91</label>
+            <select>
+                <option class="option">Australia</option>
+                <option>India</option>
+                <option>Canada</option>
+            </select>
         </div>
-        <div>
-            <label>country code</label>
-            <input type="text" placeholder="enter country code">
-        </div>
-        <div>
-            <label>phone number</label>
-            <input type="text" placeholder="enter phone number">
-        </div>
-        <div>
-        <label>confirm password</label>
-        <input type="password" placeholder="confirm password">
-        <br><br>
-        </div>
-        <div>
-        <button type="submit">sign up</button>
-        </div>
-
-
+        <button type="submit">Submit</button>
     </form>
-    
 </body>
 </html>
+ujs-sdnz-bwi
