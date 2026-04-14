@@ -1,4 +1,4 @@
-"primitive data type :"
+"primitive data type :" 
 
 let str="dhanya12@gmail.com";
 console.log(typeof(str));
