@@ -61,3 +61,37 @@ assign.apply(student);
 assign.call(student);
 let result=assign.bind(student);
 result();
+
+let obj={
+    a:1,
+    b:2,
+    sum(){
+        return this.a+this.b;
+    }
+}
+
+const result2=obj.sum;
+console.log(result2());
+
+let product=[
+    {
+        item_1:'clothes',
+        price:'90,000',
+        type:'lenin'
+    },
+    {
+        item_2:'Electronics',
+        price:'1,20,000',
+        type:'Monitors'
+    },
+    {
+        item_3:'furniture',
+        price:'2,00,000',
+        type:'Sofa'
+    },
+]
+console.log(product);
+
+for(let index in employeeData){
+    console.log(index,employeeData[index])
+}
