@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event handling</title>
+    <style>
+        body{
+            background-color:darkblue;
+            color:white;
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+    </style>
+</head>
+<body>
+    <h1> Add Event Listeners In Js(Event Handling)</h1>
+    <button onclick="add()">Join Now</button>
+    <button id="Button">Get Started</button>
+    <button>Book Now"></button>
+    <script>
+        const btn=document.getElementById("Button");
+        btn.onclick=(){
+            alert("Button Clicked");
+        }
+        function add(){
+            alert("method");
+        }
+    </script>
+</body>
+</html>
