@@ -17,15 +17,20 @@
     <h1> Add Event Listeners In Js(Event Handling)</h1>
     <button onclick="add()">Join Now</button>
     <button id="Button">Get Started</button>
-    <button>Book Now"></button>
+    <button>Book Now</button>
     <script>
         const btn=document.getElementById("Button");
-        btn.onclick=(){
+        btn.onclick=()=>{
             alert("Button Clicked");
         }
         function add(){
             alert("method");
         }
+
+        const btn_3=document.getElementById("btn_3");
+        btn_3.addEventListener("click",()=>{
+            alert("Already Booked");
+        })
     </script>
 </body>
 </html>
